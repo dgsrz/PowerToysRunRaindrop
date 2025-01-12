@@ -1,0 +1,14 @@
+{
+    "ID": "6BDCAE7968C048FFBC5CE900C459A909",
+    "ActionKeyword": "rd",
+    "IsGlobal": false,
+    "Name": "Raindrop",
+    "Author": "dgsrz",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/dgsrz/PowerToysRunRaindrop",
+    "ExecuteFileName": "Community.PowerToys.Run.Plugin.Raindrop.dll",
+    "IcoPathDark": "Assets\\icon_dark.png",
+    "IcoPathLight": "Assets\\icon_light.png",
+    "DynamicLoading": false
+}
