@@ -15,8 +15,7 @@ namespace Community.PowerToys.Run.Plugin.Raindrop
 				Key = nameof(AccessToken),
 				DisplayLabel = Resources.AccessTokenDisplayLabel,
 				DisplayDescription = Resources.AccessTokenDescription,
-				PluginOptionType = PluginAdditionalOption.AdditionalOptionType.Textbox,
-				TextValue = ""
+				PluginOptionType = PluginAdditionalOption.AdditionalOptionType.Textbox
 			}
 		];
 
@@ -24,17 +23,7 @@ namespace Community.PowerToys.Run.Plugin.Raindrop
 
 		public void UpdateSettings(PowerLauncherPluginSettings settings)
 		{
-			AccessToken = GetSetting(settings, nameof(AccessToken))?.TextValue ?? GetDefaultOption(nameof(AccessToken)).TextValue;
-		}
-
-		private PluginAdditionalOption? GetSetting(PowerLauncherPluginSettings settings, string key)
-		{
-			return settings.AdditionalOptions.FirstOrDefault(x => x.Key == nameof(key));
-		}
-
-		private PluginAdditionalOption GetDefaultOption(string key)
-		{
-			return ((ISettingProvider)this).AdditionalOptions.First(x => x.Key == key);
+			AccessToken = settings.AdditionalOptions.SingleOrDefault(x => x.Key == nameof(AccessToken))?.TextValue ?? "";
 		}
 	}
 }
