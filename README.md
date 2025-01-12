@@ -6,7 +6,7 @@ Access your Raindrop.io bookmarks with PowerToys Run
 
 ## Prerequisites
 
-1. Newest PowerToys (v0.86 or higher)
+1. PowerToys v0.86 or higher.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Access your Raindrop.io bookmarks with PowerToys Run
 6. Restart PowerToys.
 
 > [!NOTE]
-> You can get your Raindrop access token with following steps:
+> You can get your Raindrop access token with the following steps.
 > 1. In the `For Developers` sections, click on `Create new app`.
 > 2. Set the app name, and checked `I accept the Raindrop.io API Terms & Guidelines`.
 > 3. In the newly created app, click on `Create test token`.
