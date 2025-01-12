@@ -2,6 +2,8 @@
 
 Access your Raindrop.io bookmarks with PowerToys Run
 
+![Screenshot](./Docs/snapshot.png)
+
 ## Prerequisites
 
 1. Newest PowerToys (v0.86 or higher)
@@ -13,6 +15,7 @@ Access your Raindrop.io bookmarks with PowerToys Run
 3. Extract the ZIP file to `%LOCALAPPDATA%\Microsoft\PowerToys\PowerToys Run\Plugins`.
 4. Reopen PowerToys.
 5. Configure plugin.
+6. Restart PowerToys.
 
 > [!NOTE]
 > You can get your Raindrop access token with following steps:
