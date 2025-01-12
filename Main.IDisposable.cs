@@ -6,29 +6,29 @@ using System.Threading.Tasks;
 
 namespace Community.PowerToys.Run.Plugin.Raindrop
 {
-	public partial class Main : IDisposable
-	{
-		private bool Disposed { get; set; }
+    public partial class Main : IDisposable
+    {
+        private bool Disposed { get; set; }
 
-		public void Dispose()
-		{
-			Dispose(true);
-			GC.SuppressFinalize(this);
-		}
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
 
-		protected virtual void Dispose(bool disposing)
-		{
-			if (Disposed || !disposing)
-			{
-				return;
-			}
+        protected virtual void Dispose(bool disposing)
+        {
+            if (Disposed || !disposing)
+            {
+                return;
+            }
 
-			if (Context?.API != null)
-			{
-				Context.API.ThemeChanged -= OnThemeChanged;
-			}
+            if (Context?.API != null)
+            {
+                Context.API.ThemeChanged -= OnThemeChanged;
+            }
 
-			Disposed = true;
-		}
-	}
+            Disposed = true;
+        }
+    }
 }
